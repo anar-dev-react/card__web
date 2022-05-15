@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Challenge by Voxloud | Bookmark landing page</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body id="body">
+    <section id="head">
+        <div class="logo">
+            <img src="./assets/logo-bookmark.svg" alt="logo"/>
+        </div>
+        <div class="head__menu">
+            <a href="#features">FEATURES</a>
+            <a href="#">PRICING</a>
+            <a href="#contact">CONTACT</a>
+        </div>
+        <div class="login">
+            <button>LOGIN</button>
+        </div>
+    </section>
+    <section id="cont">
+    <div class="content__left__side">
+        <article>
+        <h1>A Simple Bookmark <br/> Manager</h1>
+        <p>A clean and simple interface to organize your favourite<br/> websites. Open a new browser tab and see your load<br/> instantly. Try it for free</p>
+        </article>
+        <div class="get__browser">
+            <button>Get it on Chrome</button>
+            <button>Get it on Firefox</button>
+        </div>
+    </div>
+    <div class="content__right__side">
+        <img src="./assets/illustration-hero.svg" alt="illustration"/>
+        <div class="background__cover"></div>
+    </div>    
+    </section>
+    <section id="features">
+        <div class="features__info">
+        <h1>Features</h1>
+        <p>Our aim is to make it quick and easy for you to access your <br/> favourite website. Your bookmarks sync between your devices<br/> so you can access them on the go.</p>
+        </div>
+        <div class="features__menu">
+            <nav class="slidemenu">  
+                <input type="radio" name="slideItem" id="slide-item-1" class="slide-toggle dot" onclick="currentSlide(1)" />
+                <label for="slide-item-1"><span>Simple Bookmarking</span></label>
+
+                <input type="radio" name="slideItem" id="slide-item-2" class="slide-toggle dot" onclick="currentSlide(2)"/>
+                <label for="slide-item-2"><span>Speedy Searching</span></label>
+
+                <input type="radio" name="slideItem" id="slide-item-3" class="slide-toggle dot" onclick="currentSlide(3)"/>
+                <label for="slide-item-3"><span>Easy Sharing</span></label>
+                <div class="clear"></div>
+                <div class="slider">
+                  <div class="bar"></div>
+                </div>
+              </nav>
+              <div class="fade">
+              <div class="mySlides fade">
+                <div class="left__features">
+                    <img src="./assets/illustration-features-tab-1.svg" alt="illustration"/>
+                    <div class="background__cover__features"></div>
+                </div>
+                <div class="right__features">
+                    <h1>Bookmark in one click</h1>
+                    <p>Organize your bookmarks however you like. Our <br/> simple drag-and-drop interface gives you complete <br/>control over how you manage your favourite sites</p>
+                    <button>More Info</button>
+                </div>
+              </div>
+              <div class="mySlides fade second">
+                <div class="left__features">
+                    <img src="./assets/illustration-features-tab-2.svg" alt="illustration"/>
+                    <div class="background__cover__features"></div>
+                </div>
+                <div class="right__features">
+                    <h1>Intelligent search</h1>
+                    <p>Our powerful search feature will help you find saved<br/>sites in no time at all. No need to trawl through all of<br/>your bookmarks.</p>
+                    <button>More Info</button>
+                </div>
+              </div>
+              <div class="mySlides fade">
+                <div class="left__features third">
+                  <img src="./assets/illustration-features-tab-3.svg" alt="illustration"/>
+                  <div class="background__cover__features"></div>
+              </div>
+              <div class="right__features">
+                  <h1>Share your bookmarks</h1>
+                  <p>Easily share your bookmarks and collections with<br/>others. Create a shareble link that you can send at<br/>the click of a button</p>
+                  <button>More Info</button>
+              </div>
+              </div>
+              </div>
+        </div>
+    </section>
+    <section id="extension">
+        <div class="extension__text">
+          <h1>Download the extension</h1>
+          <p>We've got more browsers in the pipeline. Please do let us know if <br/> you'vs got a favourite you'd like us to prioritize</p>
+        </div>
+        <div class="browser__cards">
+          <div class="card chrome">
+            <div class="up__card">
+            <img src="./assets/logo-chrome.svg" alt="chrome"/>
+            <h3>Add to Chrome</h3>
+            <p>Minimum version 62</p>
+          </div>
+          <div class="down__card">
+            <img src="./assets/bg-dots.svg" alt="dots"/>
+            <button>Add & Install Extension</button>
+          </div>
+          </div>
+          <div class="card firefox">
+            <div class="up__card">
+            <img src="./assets/logo-firefox.svg" alt="firefoxx"/>
+            <h3>Add to Firefox</h3>
+            <p>Minimum version 55</p>
+          </div>
+          <div class="down__card">
+            <img src="./assets/bg-dots.svg" alt="dots"/>
+            <button>Add & Install Extension</button>
+          </div>
+          </div>
+          <div class="card">
+            <div class="up__card">
+            <img src="./assets/logo-opera.svg" alt="opera"/>
+            <h3>Add to Opera</h3>
+            <p>Minimum version 46</p>
+          </div>
+          <div class="down__card">
+            <img src="./assets/bg-dots.svg" alt="dots"/>
+            <button>Add & Install Extension</button>
+          </div>
+          </div>
+        </div>
+    </section>
+    <section id="faq">
+        <div class="faq__text">
+          <h1>Frequently Asked Questions</h1>
+          <p>Here are some of our FAQs. If you have any other questions<br/>you'd like answered please feel free to email us. </p>
+        </div>
+<div class="faq-content">
+  <div class="faq-question">
+    <input id="q1" type="checkbox" class="panel">
+    <label for="q1" class="panel-title">What is Bookmark?</label>
+    <div class="down"><img src="./assets/icon-arrow.svg" alt="down arrow"/></div>
+    <div class="panel-content">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloremque vero sequi corporis! Perspiciatis cupiditate corporis eos natus iusto,
+       quidem repellat earum tempore, quaerat libero praesentium dolor, incidunt nihil facere quas?</div>
+  </div>
+  <div class="faq-question">
+    <input id="q2" type="checkbox" class="panel">
+    <label for="q2" class="panel-title">How can I request a new browser?</label>
+    <div class="down"><img src="./assets/icon-arrow.svg" alt="down arrow"/></div>
+    <div class="panel-content">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus, nemo veritatis in amet officiis non aliquid incidunt alias voluptatum.
+       Ullam vel quis consequatur nostrum. Quisquam pariatur placeat dignissimos perspiciatis ut.</div>
+  </div>
+  <div class="faq-question">
+    <input id="q3" type="checkbox" class="panel">
+    <label for="q3" class="panel-title">Is there a mobile app?</label>
+    <div class="down"><img src="./assets/icon-arrow.svg" alt="down arrow"/></div>
+    <div class="panel-content">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa, omnis blanditiis ipsum distinctio numquam asperiores quidem natus! Dolorem
+       tempore deserunt nihil natus, fuga debitis consectetur facere blanditiis id, velit minima.</div>
+  </div>
+  <div class="faq-question">
+    <input id="q4" type="checkbox" class="panel">
+    <label for="q4" class="panel-title">What about other Chronium browsers?</label>
+    <div class="down"><img src="./assets/icon-arrow.svg" alt="down arrow"/></div>
+    <div class="panel-content">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa, omnis blanditiis ipsum distinctio numquam asperiores quidem natus! Dolorem
+       tempore deserunt nihil natus, fuga debitis consectetur facere blanditiis id, velit minima.</div>
+  </div>
+  <button>More Info</button>
+</div>
+    </section>
+    <section id="contact" >
+        <p>35.000+ ALREADY JOINED</p>
+        <h2>Stay up-to-date with what<br/> we're doing</h2>
+        <form class="contact__email">
+          <label for="mail">
+            <input type="email" id="mail" name="mail" required placeholder="Enter your email address">
+            <span class="error" aria-live="polite"></span>
+            <img src="./assets/icon-error.svg" alt="error" class="error__icon"/>
+          </label>
+          <button>Contact Us</button></form>
+    </section>
+  <footer id="footer">
+      <div class="footer__logo">
+          <img src="./assets/logo-bookmark.svg" alt="logo"/>
+          <h3>BOOKMARK</h3>
+      </div>
+      <div class="footer__menu">
+          <a href="#features">FEATURES</a>
+          <a href="#">PRICING</a>
+          <a href="#contact">CONTACT</a>
+      </div>
+      <div class="social__network">
+        <div class="facebook"><img src="./assets/facebook-svgrepo-com(1).svg"/></div>
+        <div class="twitter"><img src="./assets/icon-twitter.svg"/></div>
+      </div>
+      <div class="about__me">
+      Coded by <a href="linkedin.com/in/anar-mammadhasanov">Anar Mammadhasanov</a>
+      </div>
+  </footer>
+
+
+<script>
+    let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+
+
+const form  = document.getElementsByTagName('form')[0];
+const email = document.getElementById('mail');
+const emailError = document.querySelector('#mail + span.error');
+email.addEventListener('input', function (event) {
+  if (email.validity.valid) {
+    emailError.textContent = ''; 
+    emailError.className = 'error'; 
+  } else {
+    showError();
+  }
+});
+form.addEventListener('submit', function (event) {
+  if(!email.validity.valid) {
+    showError();
+    event.preventDefault();
+  }
+});
+function showError() {
+ if(email.validity.typeMismatch) {
+    emailError.textContent = "Whoops,make sure it's an email";
+  } 
+  emailError.className = 'error active';
+}
+</script>
+</body>
+
+</html>
